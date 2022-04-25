@@ -9,7 +9,6 @@ console.log(challenge.substr(3));        //Days of JavaScript
 console.log(challenge.includes('Script'));   //true
 console.log(challenge.split());   //[ '30 Days of JavaScript' ]
 console.log(challenge.split(' '));  //[ '30', 'Days', 'of', 'JavaScript' ]
-
 let myString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
 console.log(myString.split(','));   
 //[
@@ -21,7 +20,8 @@ console.log(myString.split(','));
   ' Oracle',
   ' Amazon'
 ]
-
+console.log(challenge.replace('JavaScript','Python'));    //30 Days of Python
+console.log(challenge.charAt(15));   //S
 CHALLENGE:2
 let quote = `The quote ' There is no exercise better for the heart than reaching down and lifting people up. ' by Johgn Holmes teaches us to help one another .`;
 console.log(quote);  //The quote ' There is no exercise better for the heart than reaching down and lifting people up. ' by Johgn Holmes teaches us to help one another .
