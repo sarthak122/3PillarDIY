@@ -15,3 +15,8 @@ D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher.'
 matches = txt.replace(/%/g, '')
 console.log(matches) 
  //I am teacher and  I love teaching.There is nothing as more rewarding as educating and empowering people.I found teaching more interesting than any other jobs.Does this motivate you to be a teacher.
+
+const text =  'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
+const arr  = text.match(/\d+/g);
+const totalAnnualIncome = (+arr[0] + +arr[2]) * 12 + +arr[1];
+console.log(totalAnnualIncome);
