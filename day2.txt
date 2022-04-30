@@ -22,6 +22,44 @@ console.log(myString.split(','));
 ]
 console.log(challenge.replace('JavaScript','Python'));    //30 Days of Python
 console.log(challenge.charAt(15));   //S
+console.log(challenge.charCodeAt(11));  //74
+console.log(challenge.indexOf('a'));  //4
+console.log(challenge.lastIndexOf('a'));  /14
+var sent = 'You cannot end a sentence with because because because is a conjunction';
+console.log(sent.indexOf('because'));  //31
+console.log(sent.lastIndexOf('because'));  //47
+console.log(sent.search('because'));  //31
+var sent = ' 30 Days Of JavaScript ';
+console.log(sent.trim()); //30 Days Of JavaScript
+console.log(sent.startsWith(30)); //true
+console.log(sent.endsWith('t')); //true
+console.log(sent.match(/a/gi)); //[ 'a', 'a', 'a' ]
+var sent = '30 Days Of';
+console.log(sent.concat(' ','JavaScript')); //30 Days Of JavaScript
+console.log(sent.repeat(2)); //30 Days Of JavaScript30 Days Of JavaScript
+
 CHALLENGE:2
 let quote = `The quote ' There is no exercise better for the heart than reaching down and lifting people up. ' by Johgn Holmes teaches us to help one another .`;
 console.log(quote);  //The quote ' There is no exercise better for the heart than reaching down and lifting people up. ' by Johgn Holmes teaches us to help one another .
+var sent = 'You cannot end a sentence with because because because is a conjunction';
+var start = sent.indexOf('because');
+console.log(sent.substr(start,'because'.length*3+2));//because because because
+
+CHALLANGE-3
+var str = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
+let count = str.match(/love/gi);  //[ 'Love', 'love', 'love' ]
+console.log(count.length); //3
+
+var s='You cannot end a sentence with because because because is a conjunction';
+var cnt = s.match(/because/gi); //[ 'because', 'because', 'because' ]
+console.log(cnt.length); //3
+
+const txt = '%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing.\
+T%he%re i%s n%o%th%ing as m%ore r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing \
+p%e%o%ple.\
+I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs.\
+D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher.'
+
+matches = txt.replace(/%/g, '')
+console.log(matches) 
+ //I am teacher and  I love teaching.There is nothing as more rewarding as educating and empowering people.I found teaching more interesting than any other jobs.Does this motivate you to be a teacher.
