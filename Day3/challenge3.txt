@@ -1,0 +1,12 @@
+var ob = new Date();
+var year = ob.getFullYear();
+var mon = ob.getMonth();
+var date = ob.getDate();
+var hour = ob.getHours();
+var min = ob.getMinutes();
+mon=(mon<10)?'0'+mon:mon;
+date=(date<10)?'0'+date:date;
+hour=(hour<10)?'0'+hour:hour;
+min=(min<10)?'0'+min:min;
+read = `${year}-${mon}-${date} ${hour}:${min}`;
+console.log(read);
