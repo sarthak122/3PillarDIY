@@ -26,6 +26,35 @@ let circumference = 2*PI*r;
 console.log(`The area of the circle is ${area}`);
 console.log(`The circumference of the circle is ${circumference}`);
 
+var m1;
+var y = '2x-2';
+m = y.substr(0,1);
+var y_intercept = y.substr(2);
+var x_intercept = y.substr(0,1)/y.substr(3);
+console.log(`The slope = ${m1}`);
+console.log(`y-intercept = ${y_intercept}`);
+console.log(`x-intercept = ${x_intercept}`);
+
+var m;
+var x1=2,y1=2,x2=6,y2=10;
+m = (y2-y1)/(x2-x1);
+console.log(`The slope between points ${x1},${y1} and ${x2},${y2} is ${m}`);
+
+m1>m?console.log("m1 is greater than m"):
+m1<m?console.log("m1 is less than m"):
+console.log("both are equal");
+
+var hour = prompt('Enter hours: ' );
+var rate = prompt('Enter rate per hour: ');
+var pay;
+pay = hour*rate;
+console.log(`Your weekly earning is ${pay}`);
+
+let myName = 'Saurabh'
+myName.length > 7?
+console.log(`My name is long`):
+console.log(`My name is short`);
+
 let firstName = 'Asabeneh'
 let lastName = 'Yetayeh'
 firstName.length > lastName.length?
