@@ -7,3 +7,4 @@ let webTechs = [
   "mongodb",
   "angular",
 ];
+export default webTechs;
